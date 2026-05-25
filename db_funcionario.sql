@@ -1,3 +1,5 @@
+CREATE DATABASE IF NOT EXISTS empregados;
+
 USE empregados;
 
 CREATE TABLE funcionario (
@@ -6,3 +8,5 @@ CREATE TABLE funcionario (
     cargo VARCHAR(100) NOT NULL,
     salario DECIMAL(10, 2) NOT NULL
 );
+
+INSERT INTO funcionario (nome, cargo, salario) VALUES ('João Silva', 'Gerente', 5000.00)
